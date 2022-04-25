@@ -2,7 +2,6 @@
 
 library(dplyr)
 library(tidyverse)
-library(car)
 
 # Read CSV
 mechacar <-read_csv("Data/MechaCar_mpg.csv")
