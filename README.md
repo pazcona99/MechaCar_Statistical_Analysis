@@ -38,3 +38,43 @@ The design specifications for the MechaCar suspension coils dictate that the var
 In each case, the mean and the median are exact or very close which would illustrate a good distribution in the coil data of the sample size. However, in each case the variance is quite significantly different which can contribute to varied PSI readings.
 
 ## T-Tests on Suspension Coils
+
+Using R, a series of t-tests were performed to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch. The same priciples apply that were previously discussed for determining if the slope of the model was zero. 
+
+In stating the hypotheses, assuming a signifigance of 0.05, the null hypothesis and an alternative hypothesis are provided as follows:
+
+    - Ho: The value of PSI is a mean of 1,500 PSI, not statistically different.
+
+    - Ha: The value of PSI is a statistically different beyond 1500 PSI.
+
+
+- All manufacturing lots
+
+    Reference the image below for the summary statistics:
+    ![Deliverable3:All_Lots](./Resources/Deliverable3_t_test_allLots.PNG)
+
+    - At a P-Value of 0.06, this fails to reject the null hypothesis and therefore not statistically different.
+
+- Lot 1
+
+    Reference the image below for the summary statistics:
+    ![Deliverable3:Lot1](./Resources/Deliverable3_t_test_Lot1.PNG)
+
+    - At a P-Value of 1, this fails to reject the null hypothesis and therefore not statistically different.
+
+- Lot 2
+
+    Reference the image below for the summary statistics:
+    ![Deliverable3:Lot2](./Resources/Deliverable3_t_test_Lot2.PNG)
+
+    - At a P-Value of 0.60, this fails to reject the null hypothesis and therefore not statistically different.
+
+- Lot 3
+
+    Reference the image below for the summary statistics:
+    ![Deliverable3:Lot3](./Resources/Deliverable3_t_test_Lot3.PNG)
+
+    - At a P-Value of 0.04, it is acceptable to reject the null hypothesis and therefore the PSI is statistically different.
+
+## Study Design: MechaCar vs Competition
+
