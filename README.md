@@ -26,3 +26,15 @@ Considering the slope of the linear model. it can considered to be non-zero. If 
 - Interpret results: Since the P-value (5.35e-11. ) is much less than the significance level (0.05), we cannot accept the null hypothesis.
 
 Does this linear model predict mpg of MechaCar prototypes effectively? This may be it's own experiment in and of itself to find out. The R-squared value is often a good indicator of fit. The current value of the multiple R-squared is 0.7149 and the adjusted R-squared is 0.6825. A 100% R-qsaured indicates that the model explains all the variability of the response data around its mean. In general, this model can reasonably predict the MPG of the MechaCar but it's not perfect.
+
+## Summary Statistics on Suspension Coils
+
+The MechaCar dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Using R, a summary statistics table was created to show the suspension coil’s PSI continuous variable across all manufacturing lots, and the following PSI metrics for each lot: mean, median, variance, and standard deviation. These are shown below:
+
+![Deliverable2:Sus_Coil](./Resources/Deliverable2_Sus_Coil.PNG)
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The current manufacturing data does meet this design specification for all manufacturing lots in total and each lot individually.
+
+In each case, the mean and the median are exact or very close which would illustrate a good distribution in the coil data of the sample size. However, in each case the variance is quite significantly different which can contribute to varied PSI readings.
+
+## T-Tests on Suspension Coils
