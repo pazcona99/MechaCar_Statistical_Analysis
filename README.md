@@ -78,3 +78,39 @@ In stating the hypotheses, assuming a signifigance of 0.05, the null hypothesis 
 
 ## Study Design: MechaCar vs Competition
 
+Using R, it is possible to design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
+
+The following provides a structured breakdown for this potential case study:
+
+- What metric or metrics will be tested?
+
+  - Overall Safety Rating: Safety Ratings are available at https://www.nhtsa.gov/ratings. The "overall" category is made up of various sub-categories such as: Frontal Crash, Side Crash, Rollover, etc.; but this can remain solely categorical like (e.g. A, B, C, D, E, and F)
+
+  - Vehicle Weight: This data is publically available for current cars using the proper scraping tools. This can be converted into "buckets". For example, for cars weighing 0.5 - 2.0 tons (e.g. 1000 - 4000 pounds), one would need twelve 250 pound weight ‘categories’.
+
+- What is the null hypothesis or alternative hypothesis?
+
+  - Null Hypothesis: The MechaCar scores higher in consumer satisfaction based on safety, efficiency, and performance.
+
+  - Alternative Hypothesis: The competition maintains overall perfomance overall the MechaCar with its consumers.
+
+- What statistical test would will be used to test the hypothesis? And why?
+
+  - Chi-Squared Test: This test can be used to determine if there is a difference in categorical frequencies between groups. 
+
+  - If the p-value of the Chi-Squared Test is below 0.05, then one can reject the Null Hypothesis, and know that combining all these factors also led to increase in the overall performance of the competition.
+
+- What data is needed to run the statistical test?
+
+  - Cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating (including the MechaCar).
+
+  - Verify Pre-conditions for Chi-Squared Test
+
+    - Each subject within a group contributes to only one frequency. In other words, the sum of all frequencies equals the total number of subjects in a dataset.
+    - Each unique value has an equal probability of being observed.
+    - There is a minimum of five observed instances for every unique value for a 2x2 chi-squared table.
+    - For a larger chi-squared table, there is at least one observation for every unique value and at least 80% of all unique values have five or more observations.
+
+## Summary 
+
+Based on the analysis above, the major impacts on MPG are car weight, spoiler angle, and AWD capability. This means that for any improvement on the MPG of the MechaCar, designers and enigeers to consider these variables. In addition, when looking at suspicion coils, Lot 3 has the most variance and lower PSI average. This could mean that Lot 3 should not be used within the MechaCar. The t-test is a viable way to create multiple case studies of the Mechcar beyond what was found here.
